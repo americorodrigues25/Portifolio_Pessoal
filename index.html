@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inicio Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fim Google Fonts -->
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fim CDN Bootstrap -->
+    <!-- Inicio Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fim Bootstrap icons -->
+    <!-- Inicio Dev Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Fim Dev Icons -->
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="icon" href="./assets/imagens/logo2.png">
+    <title>Portifólio | Américo Rodrigues - Desenvolvedor Front-End</title>
+</head>
+
+<body class="font-sans">
+    <div id="indicator" class="bg-border-custom h-2 w-0 fixed bottom-0 z-50"></div>
+    <header id="home">
+        <nav
+            class="navbar navbar-expand-lg fixed-top mx-auto max-w-full bg-neutral-50 dark:bg-gray-950 shadow-md h-16 md:h-20 dark:border-b-2 dark:border-text-custom">
+            <div class="container-fluid max-w-7xl">
+                <a class="navbar-brand " href="#home">
+                    <img id="logo" src="./assets/midias/logo2.png" alt="Imagem Logo DevCode" class="w-16 ml-3">
+                </a>
+                <div class="offcanvas offcanvas-end offcanvas-custom dark:bg-gray-950 h-100 w-75" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class=" offcanvas-header">
+                        <h5 class="offcanvas-title text-neutral-800 font-medium" id="offcanvasNavbarLabel"><img
+                                id="logoMenuMobile" src="./assets/imagens/logo2.png" alt="Imagem Logo DevCode"
+                                class="w-16"></h5>
+                        <button type="button" class="btn-close focus:outline-none focus:shadow-none"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul id="navbarNav"
+                            class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-2 uppercase flex items-center">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
+                                    href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
+                                    href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
+                                    href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
+                                    href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
+                                    href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- toggle modo dark -->
+                <label class="flex cursor-pointer">
+                    <input type="checkbox" class="sr-only peer">
+                    <div
+                        class="peer after:left-0 peer-checked:after:left-8 peer-checked:bg-button-bg w-14 h-6 bg-neutral-300 rounded-full flex items-center px-1 after:content-[''] after:rounded-full after:flex after:relative after:w-4 after:h-4 after:bg-button-bg after:peer-checked:bg-neutral-200">
+                    </div>
+                </label>
+                <!-- toggle modo dark -->
+
+                <button
+                    class="navbar-toggler border-none focus:outline-none focus:shadow-none text-neutral-700 dark:text-neutral-200"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span><i class="bi bi-list"></i></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dark:bg-gray-950 flex justify-center items-center h-screen px-6 pt-20">
+        <div class="text-center flex flex-col items-center gap-y-6 md:gap-y-10">
+            <h1 class="text-neutral-800 dark:text-neutral-200 2xl:text-6xl text-5xl font-black">Olá, sou Américo
+                Rodrigues</h1>
+            <p class="text-animation text-text-custom text-3xl md:text-4xl font-semibold uppercase">Desenvolvedor
+                Front-End </p>
+            <p class="text-neutral-700 dark:text-neutral-300 text-xl md:text-2xl hidden md:flex">Trazendo tecnologia e
+                inovação para perto de você</p>
+
+            <div class="flex flex-col gap-3 md:flex-row">
+                <a href="#projects">
+                    <button
+                        class="w-60 h-14 bg-button-bg cursor-pointer rounded-md border-2 border-none dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_1.5px_-3.5px_0px_1px_#441bbf,inset_-1.5px_0.5px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out">
+                        <span
+                            class="font-semibold text-base uppercase text-neutral-100 group-hover:text-text-custom">Projetos</span>
+                    </button>
+                </a>
+                <a href="#contact">
+                    <button
+                        class="w-60 h-14 cursor-pointer rounded-md border-2 dark:border-none dark:bg-button-bg dark:hover:bg-transparent dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] dark:hover:text-text-custom border-[#441bbf] shadow-[inset_0px_-2px_0px_1px_#441bbf] group hover:bg-button-bg transition duration-300 ease-in-out">
+                        <span
+                            class="font-semibold text-base uppercase text-text-custom group-hover:text-neutral-100 dark:group-hover:text-text-custom dark:text-neutral-100">Entrar
+                            em contato</span>
+                    </button>
+                </a>
+            </div>
+
+            <ul class="example-2">
+                <li class="icon-content">
+                    <a href="https://github.com/americorodrigues25/" aria-label="GitHub" data-social="github"
+                        target="_blank">
+                        <div class="filled"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <div class="tooltip">GitHub</div>
+                </li>
+                <li class="icon-content">
+                    <a href="https://www.linkedin.com/in/americo-rodrigues025/" aria-label="LinkedIn"
+                        data-social="linkedin" target="_blank">
+                        <div class="filled"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <div class="tooltip">LinkedIn</div>
+                </li>
+
+                <li class="icon-content">
+                    <a href="mailto:americo.200422@gmail.com" aria-label="Youtube" data-social="youtube"
+                        target="_blank">
+                        <div class="filled"></div>
+                        <i class="bi bi-envelope-at-fill text-2xl z-10"></i>
+                    </a>
+                    <div class="tooltip">Email</div>
+                </li>
+
+                <li class="icon-content">
+                    <a href="https://www.instagram.com/devweb_code/" aria-label="Instagram" data-social="instagram"
+                        target="_blank">
+                        <div class="filled"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <div class="tooltip">Instagram</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div
+        class="flex justify-center items-center fixed md:bottom-20 md:right-10 bottom-14 right-8 gap-2 animate-pulse-1s z-10 cursor-pointer">
+        <a href="https://wa.me/5511964166962?text=Olá, estava navegando pelo site e gostaria de tirar algumas duvidas."
+            class="flex justify-center items-center gap-2" target="_blank">
+            <div
+                class="justify-center items-center gap-2 bg-white shadow-sm shadow-neutral-800 w-36 h-10 rounded-xl hidden md:flex">
+                <p class="text-center text-sm font-medium text-neutral-800">fale comigo</p>
+                <i class="bi bi-hand-thumbs-up-fill text-text-custom text-xl"></i>
+            </div>
+            <div class="flex justify-center items-center w-12 h-12 bg-button-bg rounded-full">
+                <i class="bi bi-chat-left-dots-fill text-neutral-100 text-2xl"></i>
+
+            </div>
+        </a>
+    </div>
+
+    <!-- Section about -->
+    <section id="about" class="px-6 dark:bg-gray-950">
+        <div class="flex items-center flex-col gap-5 max-w-2xl mx-auto text-center">
+            <h2
+                class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
+                <span>Sobre mim</span>
+            </h2>
+            <p class=" text-neutral-700 text-lg leading-relaxed dark:text-neutral-400">Aqui você irá encontrar mais
+                informações sobre mim e o
+                que faço,
+                sobretudo em termos de programação e tecnologia</p>
+        </div>
+        <div
+            class="flex flex-col-reverse xl:flex-row justify-between items-center mx-auto max-w-7xl pt-10 xl:pt-20 gap-10 lg:gap-20">
+            <div class="max-w-full">
+                <h3 class="mb-8 text-text-custom text-xl font-bold tracking-wider">Conheça-me!</h3>
+                <p class="text-neutral-700 dark:text-neutral-400 text-base leading-relaxed">Sou um <strong
+                        class="text-neutral-600 dark:text-neutral-300">Desenvolvedor Web Focado em Front-End</strong>,
+                    construindo e gerindo o Front-end de Websites e Aplicações Web que conduzem ao sucesso do produto
+                    global. Veja alguns dos meus trabalhos na secção Projectos.</p> <br>
+                <p class="mb-8 text-neutral-700  dark:text-neutral-400 text-base leading-relaxed">Estou aberto a
+                    oportunidades de <strong class="text-neutral-600 dark:text-neutral-300">trabalho</strong>
+                    onde eu possa contribuir, aprender e crescer. Se tiverem uma boa oportunidade que corresponda às
+                    minhas competências e experiência, não hesitem em <strong
+                        class="text-neutral-600 dark:text-neutral-300">contactar-me</strong>.</p>
+                <a href="#contact">
+                    <button
+                        class="w-52 h-14 bg-button-bg cursor-pointer rounded-md border-2 border-none dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_1.5px_-3.5px_0px_1px_#441bbf,inset_-1.5px_0.5px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out">
+                        <span
+                            class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Entrar
+                            em contato</span>
+                    </button>
+                </a>
+            </div>
+            <div class="image-about w-full">
+                <img src="./assets/imagens/img-sobre-2.jpg" alt="Imagem da seção sobre"
+                    class="block w-full h-auto relative px-3">
+            </div>
+        </div>
+    </section>
+    <!-- fim section about -->
+
+    <!-- section skills -->
+    <section class="py-20 px-6 dark:bg-gray-950">
+        <div class="flex justify-center">
+            <h2
+                class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
+                habilidades
+            </h2>
+        </div>
+        <div class="flex justify-center items-center ">
+            <div class="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto mt-16 ">
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>HTML 5</p>
+                    <i class="devicon-html5-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>CSS</p>
+                    <i class="devicon-css3-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>JavaScript</p>
+                    <i class="devicon-javascript-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Bootstrap</p>
+                    <i class="devicon-bootstrap-plain text-4xl"></i>
+
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Tailwind</p>
+                    <i class="devicon-tailwindcss-original text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Sass</p>
+                    <i class="devicon-sass-original text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>React</p>
+                    <i class="devicon-react-original text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Vite</p>
+                    <i class="devicon-vitejs-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Typescript</p>
+                    <i class="devicon-typescript-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Node JS</p>
+                    <i class="devicon-nodejs-plain-wordmark text-5xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Mysql</p>
+                    <i class="devicon-mysql-original text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>PHP</p>
+                    <i class="devicon-php-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Python</p>
+                    <i class="devicon-python-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>GIT</p>
+                    <i class="devicon-git-plain text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>GitHub</p>
+                    <i class="devicon-github-original text-4xl"></i>
+                </div>
+                <div
+                    class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
+                    <p>Figma</p>
+                    <i class="devicon-figma-plain text-4xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim section skills -->
+
+    <!-- section my services -->
+    <section id="services" class="px-3 dark:bg-gray-950">
+        <div class="flex justify-center">
+            <h2
+                class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom text-center">
+                Serviços
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto pt-16 cursor-default">
+            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
+                <div class="flex justify-between items-center pb-4">
+                    <h2
+                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
+                        01</h2>
+                    <i
+                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2
+                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
+                        Landing Pages</h2>
+                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">Páginas focadas em conversão, criadas para
+                        capturar leads, aumentar
+                        vendas
+                        ou direcionar ações específicas. Desenvolvo Landing Pages personalizadas, que combinam design
+                        estratégico e eficácia
+                        para gerar mais resultados.</p>
+                </div>
+            </div>
+            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
+                <div class="flex justify-between items-center pb-4">
+                    <h2
+                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
+                        02</h2>
+                    <i
+                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2
+                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
+                        Site intitucional
+                    </h2>
+                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">O site institucional é o cartão de visita
+                        digital da sua empresa.
+                        Ele
+                        apresenta informações
+                        essenciais sobre o seu negócio, produto ou serviço, estabelecendo uma presença online sólida.
+                        Desenvolvo sites que refletem a credibilidade e o potencial da sua empresa.</p>
+                </div>
+            </div>
+            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
+                <div class="flex justify-between items-center pb-4">
+                    <h2
+                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
+                        03</h2>
+                    <i
+                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2
+                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
+                        Otimização com
+                        Google
+                    </h2>
+                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">Seu site será entregue totalmente otimizado,
+                        seguindo as melhores
+                        práticas
+                        de SEO recomendadas pelo
+                        Google. Você alcançará posições de destaque nas pesquisas do Google e atrairá
+                        um volume maior de visitantes. Aproveite o potencial máximo do seu site e veja
+                        sua visibilidade crescer.</p>
+                </div>
+            </div>
+            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
+                <div class="flex justify-between items-center pb-4">
+                    <h2
+                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
+                        04</h2>
+                    <i
+                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h2
+                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
+                        Layouts
+                        Personalizados
+                    </h2>
+                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">Design sob medida que reflete a identidade da
+                        sua marca, criando um
+                        visual
+                        único e encantador que
+                        destaca o poder do seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim section my services -->
+
+    <!-- section projects -->
+    <section id="projects" class="py-20 px-3 dark:bg-gray-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center flex-col gap-5 max-w-2xl mx-auto text-center">
+                <h2
+                    class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
+                    <span>Projetos</span>
+                </h2>
+                <p class=" text-neutral-700 dark:text-neutral-400 text-lg leading-relaxed">Aqui encontrará alguns dos
+                    projectos em destaque e logo abaixo alguns outros que realizei</p>
+            </div>
+
+            <div class="pt-10">
+                <h3
+                    class="text-neutral-700 dark:text-neutral-300 text-2xl font-semibold tracking-wider uppercase border-bottom-custom-2 pt-10">
+                    Destaques</h3>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center pt-16 lg:pb-10 gap-8 lg:gap-20">
+                <div class="w-full flex md:gap-5">
+                    <div>
+                        <img src="./assets/imagens/cardapio-notebook.png"
+                            alt="Imagem do site da hamburgueria (computador)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                    <div class="hidden sm:block">
+                        <img src="./assets/imagens/cardapio-celular.png" alt="Imagem do site da hamburgueria (celular)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                </div>
+                <div class="w-full text-center">
+                    <h5 class="text-neutral-700 dark:text-neutral-300 text-xl tracking-wider font-bold mb-8">Cardápio Zé
+                        Burger
+                    </h5>
+                    <p class="text-neutral-700 dark:text-neutral-300 text-base mb-8 font-extralight">Aplicação de um
+                        cardapio digital para uma hamburgueria, com possibilidade de adcionar itens ao carrinho, remover
+                        e
+                        enviar pedido direto ao WhatsApp. Clique e confira !</p>
+                    <button
+                        class="open-modal w-48 h-14 bg-button-bg cursor-pointer rounded-md border-2 dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_0px_-2px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out"
+                        data-project="1">
+                        <span class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Veja
+                            mais aqui</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center pt-16 lg:pb-10 gap-8 lg:gap-20">
+                <div class="w-full flex md:gap-5">
+                    <div>
+                        <img src="./assets/imagens/construtora-notebook.png"
+                            alt="Imagem do site da construtora (computador)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                    <div class="hidden sm:block">
+                        <img src="./assets/imagens/construtora-celular.png"
+                            alt="Imagem do site da construtora (celular)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="w-full text-center">
+                    <h5 class="text-neutral-700 dark:text-neutral-300 text-xl tracking-wider font-bold mb-8">Construtora
+                        Rodrigues
+                    </h5>
+                    <p class="text-neutral-700 dark:text-neutral-300 text-base mb-8 font-extralight">Site desenvolvido
+                        para uma construtora, o site possui varias seções como projetos, sobre a empresa, serviços
+                        realizados e mais. Clique e confira !
+                    </p>
+                    <button
+                        class="open-modal w-48 h-14 bg-button-bg cursor-pointer rounded-md border-2 dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_0px_-2px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out"
+                        data-project="2">
+                        <span class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Veja
+                            mais aqui</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center pt-16 lg:pb-10 gap-8 lg:gap-20">
+                <div class="w-full flex md:gap-5">
+                    <div>
+                        <img src="./assets/imagens/construtora-notebook.png"
+                            alt="Imagem do sistema de agendamento de viages (computador)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                    <div class="hidden sm:block">
+                        <img src="./assets/imagens/construtora-celular.png"
+                            alt="Imagem do sistema de agendamento de viages (computador)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="w-full text-center">
+                    <h5 class="text-neutral-700 dark:text-neutral-300 text-xl tracking-wider font-bold mb-8">Construtora
+                        Rodrigues
+                    </h5>
+                    <p class="text-neutral-700 dark:text-neutral-300 text-base mb-8 font-extralight">Site desenvolvido
+                        para uma construtora, a aplicação possui varias seções como projetos, sobre a empresa, serviços
+                        realizados e mais.
+                    </p>
+                    <button
+                        class="open-modal w-48 h-14 bg-button-bg cursor-pointer rounded-md border-2 dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_0px_-2px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out"
+                        data-project="3">
+                        <span class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Veja
+                            mais aqui</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center pt-16 lg:pb-10 gap-8 lg:gap-20">
+                <div class="w-full flex md:gap-5">
+                    <div>
+                        <img src="./assets/imagens/calculadora-notebook.png" alt="Imagem da calculadora (computador)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                    <div class="hidden sm:block">
+                        <img src="./assets/imagens/calculadora-celular.png" alt="Imagem da calculadora (celular)"
+                            class="hover:scale-110 transition-all duration-300">
+                    </div>
+                </div>
+
+                <div class="w-full text-center">
+                    <h5 class="text-neutral-700 dark:text-neutral-300 text-xl tracking-wider font-bold mb-8">Calculadora
+                        do Windows
+                    </h5>
+                    <p class="text-neutral-700 dark:text-neutral-300 text-base mb-8 font-extralight">Está aplicação se
+                        trará de uma calculadora clone do Windows com todas as operações matematicas funcionando, clique
+                        e venha conferir !
+                    </p>
+                    <button
+                        class="open-modal w-48 h-14 bg-button-bg cursor-pointer rounded-md border-2 dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_0px_-2px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out"
+                        data-project="4">
+                        <span class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Veja
+                            mais aqui</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim section projects -->
+
+    <!-- section all projects -->
+    <section class="px-3 dark:bg-gray-950">
+        <div class="max-w-7xl mx-auto">
+            <h3
+                class="text-neutral-700 dark:text-neutral-300 text-2xl font-semibold tracking-wider uppercase border-bottom-custom-2">
+                Demais projetos
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-16 lg:pb-10 gap-8">
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full">
+                    <img src="./assets/midias/clonespotify.png" alt="Imagem do projeto clone Spotify"
+                        class="w-full filter brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h3 class="mb-4 text-xl font-bold text-neutral-200 tracking-wider">Nome do projeto</h3>
+                        <button
+                            class="open-modal w-40 h-10 bg-button-bg cursor-pointer rounded-md border-none hover:border-[#491bbf] hover:bg-neutral-100 group transition duration-300 ease-in-out"
+                            data-project="1">
+                            <span
+                                class="font-medium uppercase text-base text-neutral-100 group-hover:text-text-custom">See
+                                more</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim section all projects -->
+
+    <!-- section contact -->
+    <section id="contact" class="contact py-20 px-3 dark:bg-gray-950">
+        <div class="flex items-center flex-col max-w-2xl mx-auto text-center">
+            <h2
+                class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
+                Contato</h2>
+            <p class=" text-neutral-700 dark:text-neutral-300 text-lg pt-5">Precisa tirar duvidas ou solicitar um
+                orçamento ?
+                Não deixe de entrar em contato comigo através do formulário
+                abaixo</p>
+        </div>
+
+        <div class="flex items-center justify-center h-auto">
+            <div class="bg-neutral-100 dark:bg-gray-900 p-6 md:p-10 rounded-lg shadow-2xl max-w-4xl w-full mt-10">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <div class="mb-6">
+                        <label for="name"
+                            class="block text-neutral-700 dark:text-neutral-300 font-medium tracking-wider mb-2">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required
+                            class="w-full p-3 rounded bg-neutral-200 dark:bg-gray-800 border-none text-neutral-800 dark:text-neutral-300 placeholder-neutral-400 dark:placeholder:text-neutral-400 outline-none">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email"
+                            class="block text-neutral-700 dark:text-neutral-300 font-medium tracking-wider mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required
+                            class="w-full p-3 rounded bg-neutral-200 dark:bg-gray-800 border-none text-neutral-800 dark:text-neutral-300 placeholder-neutral-400 dark:placeholder:text-neutral-400 outline-none">
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone"
+                            class="block text-neutral-700 dark:text-neutral-300 font-medium tracking-wider mb-2">Celular</label>
+                        <input type="text" id="phone" name="phone" placeholder="Digite seu numero com DDD" required
+                            maxlength="14"
+                            class="w-full p-3 rounded bg-neutral-200 dark:bg-gray-800 border-none text-neutral-800 dark:text-neutral-300 placeholder-neutral-400 dark:placeholder:text-neutral-400 outline-none">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message"
+                            class="block text-neutral-700 dark:text-neutral-300 font-medium tracking-wider mb-2">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Escreva aqui a sua mensagem" required
+                            class="w-full p-3 rounded bg-neutral-200 dark:bg-gray-800 border-none text-neutral-800 dark:text-neutral-300 placeholder-neutral-400 dark:placeholder:text-neutral-400 outline-none h-56"></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="w-full py-3 bg-button-bg cursor-pointer rounded-md border-2 dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_0px_-2px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out">
+                            <span
+                                class="font-semibold text-lg uppercase text-neutral-100 group-hover:text-text-custom">Enviar</span>
+                        </button>
+                    </div>
+                    <input type="hidden" name="accessKey" value="58ae8fe3-f539-4d80-b2d6-8b54a84d2ce0">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("pageshow", function (event) {
+            if (event.persisted) {
+                document.querySelector("form").reset();
+            }
+        });
+    </script>
+
+    <!-- fim section contact -->
+
+    <footer>
+        <div class="bg-gray-900">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center h-auto py-16 gap-y-12">
+                <div class="">
+                    <h2 class="text-neutral-300 text-2xl font-semibold tracking-wider uppercase pb-1">Américo Rodrigues
+                    </h2>
+                    <p class="text-text-custom text-xl tracking-wider text-center">Desenvolvedor Front-End</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-neutral-300 text-2xl font-semibold tracking-wider uppercase pb-1">Redes sociais</p>
+                    <div class="flex gap-3">
+                        <ul class="example-2">
+                            <li class="icon-content">
+                                <a href="https://github.com/americorodrigues25/" aria-label="GitHub"
+                                    data-social="github" target="_blank">
+                                    <div class="filled"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                                <div class="tooltip">GitHub</div>
+                            </li>
+                            <li class="icon-content">
+                                <a href="https://www.linkedin.com/in/americo-rodrigues025/" aria-label="LinkedIn"
+                                    data-social="linkedin" target="_blank">
+                                    <div class="filled"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                                <div class="tooltip">LinkedIn</div>
+                            </li>
+
+                            <li class="icon-content">
+                                <a href="mailto:americo.200422@gmail.com" aria-label="Youtube" data-social="youtube"
+                                    target="_blank">
+                                    <div class="filled"></div>
+                                    <i class="bi bi-envelope-at-fill text-2xl z-10"></i>
+                                </a>
+                                <div class="tooltip">Email</div>
+                            </li>
+
+                            <li class="icon-content">
+                                <a href="https://www.instagram.com/devweb_code/" aria-label="Instagram"
+                                    data-social="instagram" target="_blank">
+                                    <div class="filled"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                                <div class="tooltip">Instagram</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-neutral-300 flex justify-center items-center text-center h-8">
+            <p class="text-neutral-500 text-xs">© copyright 2024. Feito por Américo Rodrigues</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal"
+        class=" backdrop-blur-sm w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+        <div
+            class="modal-content bg-gray-950 py-5 px-4 rounded-md w-full lg:w-4/5 h-auto mt-16 max-h-[85vh] overflow-y-auto">
+            <span class="close-button text-neutral-300 text-right text-3xl hover:cursor-pointer"><i
+                    class="bi bi-x"></i></span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <!-- fim modal -->
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/projects.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
