@@ -9,12 +9,6 @@ Colocar animações com AOS Animation
 🧑🏽‍💻 CSS
 Revisar todo o css global e arrumar esta porcaria porque esta tudo uma zona
 
-🧑🏽‍💻 JAVASCRIPT
-section projects - linkar botões dentro do modal
-
-🧑🏽‍💻 Sessão Habilidades
-Ver quais skills ira deixar 
-
 🧑🏽‍💻 Sessão serviços
 Arrumar textos e ver quais serviços vai deixar
 
