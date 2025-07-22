@@ -4,9 +4,13 @@ const techIconMap = {
   javascript: "devicon-javascript-plain",
   tailwindcss: "devicon-tailwindcss-plain",
   react: "devicon-react-original",
+  typescript: "devicon-typescript-plain",
   vite: "devicon-vitejs-plain",
   node: "devicon-nodejs-plain-wordmark",
   firebase: "devicon-firebase-plain",
+  php: "devicon-php-plain",
+  mysql: "devicon-mysql-original",
+  bootstrap: "devicon-bootstrap-plain",
   motion: null,
   styled: null,
 };
@@ -40,10 +44,25 @@ const projects = [
       "javascript",
       "tailwindcss",
       "react",
+      "typescript",
       "vite",
     ],
     videoSrc: "./assets/videos/video-demostracao-construtora.mp4",
     capaVideo: "./assets/imagens/construtora-notebook.png",
+    buttons: [
+      { text: "Acessar projeto", link: "#" },
+      { text: "Acessar repositório", link: "#" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Cardápio Zé Burger",
+    description:
+      "Está foi uma aplicação desenvolvida para praticar manipulação do DOM, com o intuito de desenvolver mais minhas habilidades e aprimorar meus conhecimentos. </br> O cardápio possui funcionalidades como adicionar ou remover itens ao carrinho, calculo dinâmico do valor total, e possibilidade de enviar o pedido com as informações direto para o WhatsApp.",
+    date: "24 de maio de 2024",
+    technologies: ["html5", "css3", "javascript", "tailwindcss"],
+    videoSrc: "./assets/videos/video-demonstracao-cardapio.mp4",
+    capaVideo: "./assets/imagens/cardapio-notebook.png",
     buttons: [
       { text: "Acessar projeto", link: "#" },
       { text: "Acessar repositório", link: "#" },
@@ -65,13 +84,76 @@ const projects = [
   },
   {
     id: 5,
-    title: "Cardápio Zé Burger",
+    title: "Sistema A+",
     description:
-      "Está foi uma aplicação desenvolvida para praticar manipulação do DOM, com o intuito de desenvolver mais minhas habilidades e aprimorar meus conhecimentos. </br> O cardápio possui funcionalidades como adicionar ou remover itens ao carrinho, calculo dinâmico do valor total, e possibilidade de enviar o pedido com as informações direto para o WhatsApp.",
-    date: "24 de maio de 2024",
+      "Este é um projeto de sistema de cadastro. Neste sistema aplicamos as principais operações de banco de dados, conhecidas como CRUD.  que permitem cadastrar, consultar, alterar e deletar usuários e informações de clientes, artistas, dançarinos e professores conforme necessário. <br> Com isso, o sistema possibilitou para o cliente ter controle total de seus alunos, professores e dançarinos.",
+    date: "25 de julho de 2024",
+    technologies: ["html5", "css3", "javascript", "php", "mysql", "bootstrap"],
+    videoSrc: "./assets/videos/video-demonstrativo-sistema-a+.mp4",
+    capaVideo: "./assets/imagens/Página inicial sistema amais.png",
+    buttons: [
+      { text: "Acessar projeto", link: "#" },
+      { text: "Acessar repositório", link: "#" },
+    ],
+  },
+  {
+    id: 6,
+    title: "Dev Movies",
+    description:
+      "Projeto que realizei para entender um pouco mais sobre consumo de APIs. Utilizei a API do MDB (The Movie Database) que nos acessar uma vasta base de dados de informações relacionadas a filmes, séries de TV, atores, diretores, entre outros. <br> O projeto exibe os 20 melhores filmes listados de acordo com o site da TMDB, também tem a opção de buscar por outros filmes e exibir mais detalhes sobre o filme: Orçamento, receita, duração e uma breve descrição do filme, além da imagem de capa correspodente de cada filme, seu nome e sua avaliação no site. <br> <br> Explorei também um pouco mais sobre rotas com React Router e hooks.",
+    date: "15 de Outubro de 2024",
+    technologies: [
+      "html5",
+      "css3",
+      "javascript",
+      "react",
+      "vite",
+      "tailwindcss",
+    ],
+    videoSrc: "./assets/videos/Video-Dev-Movies.mp4",
+    capaVideo: "./assets/imagens/dev-movies-notebook.png",
+    buttons: [
+      { text: "Acessar projeto", link: "#" },
+      { text: "Acessar repositório", link: "#" },
+    ],
+  },
+  {
+    id: 7,
+    title: "Dev Movies",
+    description:
+      "Projeto de uma landing page de tênis da Nike, com um deseign moderno e animações em JavaScript.",
+    date: "10 de Setembro de 2024",
     technologies: ["html5", "css3", "javascript", "tailwindcss"],
-    videoSrc: "./assets/videos/video-demonstracao-cardapio.mp4",
-    capaVideo: "./assets/imagens/cardapio-notebook.png",
+    videoSrc: "./assets/videos/video-sneakers.mp4",
+    capaVideo: "./assets/imagens/sneakers-nike-notebook.png",
+    buttons: [
+      { text: "Acessar projeto", link: "#" },
+      { text: "Acessar repositório", link: "#" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Dev Movies",
+    description:
+      "Projeto de landing page de uma academia, com um layout moderno e responsivo em todos os tamanhos de tela.",
+    date: "10 de Fevereiro de 2024",
+    technologies: ["html5", "css3", "javascript"],
+    videoSrc: "./assets/videos/PULSEFIT-.mp4",
+    capaVideo: "./assets/imagens/pulsefit.png",
+    buttons: [
+      { text: "Acessar projeto", link: "#" },
+      { text: "Acessar repositório", link: "#" },
+    ],
+  },
+  {
+    id: 9,
+    title: "Clone Spotify",
+    description:
+      "Projeto clone do spotify, desenvolvido durante uma imersão ao Front-End com a Alura <br> Este projeto foi uma excelente oportunidade para aprofundar meu conhecimento em CSS Grid e Flexbox, além de praticar a manipulação do DOM com JavaScript. Também tive minha primeira experiência com Node.js e JSON, onde criei uma API fake de artistas para ser consumida pelo DOM.",
+    date: "10 de Fevereiro de 2024",
+    technologies: ["html5", "css3", "javascript"],
+    videoSrc: "./assets/videos/Clone Spotify - Google Chrome 2024-06-20 21-31-04.mp4",
+    capaVideo: "./assets/imagens/clonespotify.png",
     buttons: [
       { text: "Acessar projeto", link: "#" },
       { text: "Acessar repositório", link: "#" },

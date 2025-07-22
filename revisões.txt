@@ -5,26 +5,18 @@ incluir meta tags de otimização no Google
 Colocar descrição em todas as imagens 
 Ver semantica e acessibilidade do site inteiro
 Colocar animações com AOS Animation
-Deixar todo o site em portugues
 
 🧑🏽‍💻 CSS
 Revisar todo o css global e arrumar esta porcaria porque esta tudo uma zona
 
 🧑🏽‍💻 JAVASCRIPT
-Arrumar modais
 section projects - linkar botões dentro do modal
-
-🧑🏽‍💻 Sessão Sobre mim 
-Arrumar textos 
 
 🧑🏽‍💻 Sessão Habilidades
 Ver quais skills ira deixar 
 
 🧑🏽‍💻 Sessão serviços
-Arrumar textos
+Arrumar textos e ver quais serviços vai deixar
 
-🧑🏽‍💻 Sessão projetos
-ver se vai deixar 4 ou 3 projetos em destaque
-
-🧑🏽‍💻 Sessão demais projetos
-Ver quantos projetos vão ter
+🧑🏽‍💻 Sessão contatos
+Fazer página obrigado
