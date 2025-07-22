@@ -27,7 +27,7 @@ const projects = [
     videoSrc: "./assets/imagens/tela-home-cardion.png",
     buttons: [
       {
-        text: "Repositório",
+        text: "Acessar repositório",
         link: "https://github.com/americorodrigues25/Cardion-Fitness",
       },
     ],
@@ -50,8 +50,8 @@ const projects = [
     videoSrc: "./assets/videos/video-demostracao-construtora.mp4",
     capaVideo: "./assets/imagens/construtora-notebook.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://construtora-rodrigues.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Construtora-Rodrigues" },
     ],
   },
   {
@@ -64,8 +64,8 @@ const projects = [
     videoSrc: "./assets/videos/video-demonstracao-cardapio.mp4",
     capaVideo: "./assets/imagens/cardapio-notebook.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://cardapio-ze-burger.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Cardapio-Ze-Burger" },
     ],
   },
   {
@@ -78,8 +78,8 @@ const projects = [
     videoSrc: "./assets/videos/Video demonstrativo da calculadora.mp4",
     capaVideo: "./assets/imagens/calculadora-notebook.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://calculadora-windows-five.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/calculadora-windows" },
     ],
   },
   {
@@ -92,8 +92,7 @@ const projects = [
     videoSrc: "./assets/videos/video-demonstrativo-sistema-a+.mp4",
     capaVideo: "./assets/imagens/Página inicial sistema amais.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Sistema-Amais" },
     ],
   },
   {
@@ -113,13 +112,13 @@ const projects = [
     videoSrc: "./assets/videos/Video-Dev-Movies.mp4",
     capaVideo: "./assets/imagens/dev-movies-notebook.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://dev-movies-omega.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Dev-Movies" },
     ],
   },
   {
     id: 7,
-    title: "Dev Movies",
+    title: "Sneakers",
     description:
       "Projeto de uma landing page de tênis da Nike, com um deseign moderno e animações em JavaScript.",
     date: "10 de Setembro de 2024",
@@ -127,13 +126,13 @@ const projects = [
     videoSrc: "./assets/videos/video-sneakers.mp4",
     capaVideo: "./assets/imagens/sneakers-nike-notebook.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://nike-store-orcin.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Nike-Store" },
     ],
   },
   {
     id: 8,
-    title: "Dev Movies",
+    title: "PulseFit",
     description:
       "Projeto de landing page de uma academia, com um layout moderno e responsivo em todos os tamanhos de tela.",
     date: "10 de Fevereiro de 2024",
@@ -141,8 +140,8 @@ const projects = [
     videoSrc: "./assets/videos/PULSEFIT-.mp4",
     capaVideo: "./assets/imagens/pulsefit.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://pulse-fit-academia.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/PulseFit-Academia" },
     ],
   },
   {
@@ -150,13 +149,13 @@ const projects = [
     title: "Clone Spotify",
     description:
       "Projeto clone do spotify, desenvolvido durante uma imersão ao Front-End com a Alura <br> Este projeto foi uma excelente oportunidade para aprofundar meu conhecimento em CSS Grid e Flexbox, além de praticar a manipulação do DOM com JavaScript. Também tive minha primeira experiência com Node.js e JSON, onde criei uma API fake de artistas para ser consumida pelo DOM.",
-    date: "10 de Fevereiro de 2024",
+    date: "10 de Abril de 2024",
     technologies: ["html5", "css3", "javascript"],
     videoSrc: "./assets/videos/Clone Spotify - Google Chrome 2024-06-20 21-31-04.mp4",
     capaVideo: "./assets/imagens/clonespotify.png",
     buttons: [
-      { text: "Acessar projeto", link: "#" },
-      { text: "Acessar repositório", link: "#" },
+      { text: "Acessar projeto", link: "https://clone-spotify-lime.vercel.app" },
+      { text: "Acessar repositório", link: "https://github.com/americorodrigues25/Clone-Spotify" },
     ],
   },
 ];
