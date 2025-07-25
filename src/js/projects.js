@@ -86,7 +86,7 @@ const projects = [
     id: 5,
     title: "Sistema A+",
     description:
-      "Este é um projeto de sistema de cadastro. Neste sistema aplicamos as principais operações de banco de dados, conhecidas como CRUD.  que permitem cadastrar, consultar, alterar e deletar usuários e informações de clientes, artistas, dançarinos e professores conforme necessário. <br> Com isso, o sistema possibilitou para o cliente ter controle total de seus alunos, professores e dançarinos.",
+      "Este é um projeto realizado como extensão da faculdade, se trata de um sistema de cadastro que fizemos para uma empresa da região do alto tiete. Neste sistema aplicamos as principais operações de banco de dados, conhecidas como CRUD. Que permitem cadastrar, consultar, alterar e deletar usuários e informações conforme necessário. <br> <br> Com isso, o sistema possibilitou para ao cliente ter controle total de seus alunos, professores e dançarinos.",
     date: "25 de julho de 2024",
     technologies: ["html5", "css3", "javascript", "php", "mysql", "bootstrap"],
     videoSrc: "./assets/videos/video-demonstrativo-sistema-a+.mp4",
