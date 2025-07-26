@@ -4,6 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Américo Rodrigues - Desenvolvedor Front-End</title>
+    <!-- Meta SEO -->
+    <meta name="description"
+        content="Portfólio de Américo Rodrigues, Desenvolvedor Front-End. Criação de sites modernos, landing pages, aplicativos móveis e otimização com Google.">
+    <meta name="keywords"
+        content="Américo Rodrigues, desenvolvedor front-end, portfólio, landing pages, sites, aplicativos móveis, otimização Google, SEO, web design, desenvolvimento web">
+    <meta name="author" content="Américo Rodrigues">
+    <!-- Meta social (Open Graph para redes sociais) -->
+    <meta property="og:title" content="Portfólio  | Américo Rodrigues - Desenvolvedor Front-End">
+    <meta property="og:description"
+        content="Veja os projetos e serviços de Américo Rodrigues, desenvolvedor especialista em front-end e otimização para mecanismos de busca.">
+    <meta property="og:image" content="https://seudominio.com/assets/imagens/banner.jpg">
+    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:type" content="website">
+    <!-- Robots para informar motores de busca -->
+    <meta name="robots" content="index, follow">
     <!-- Inicio Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +37,12 @@
     <!-- Fim Dev Icons -->
     <link rel="stylesheet" href="./src/css/output.css">
     <link rel="icon" href="./assets/imagens/logo2.png">
-    <title>Portifólio | Américo Rodrigues - Desenvolvedor Front-End</title>
 </head>
 
 <body class="font-sans">
     <div id="indicator" class="bg-border-custom h-2 w-0 fixed bottom-0 z-50"></div>
     <header id="home">
-        <nav
+        <nav role="navigation" aria-label="Menu principal"
             class="navbar navbar-expand-lg fixed-top mx-auto max-w-full bg-neutral-50 dark:bg-gray-950 shadow-md h-16 md:h-20 dark:border-b-2 dark:border-text-custom">
             <div class="container-fluid max-w-7xl">
                 <a class="navbar-brand " href="#home">
@@ -47,8 +62,8 @@
                         <ul id="navbarNav"
                             class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-2 uppercase flex items-center">
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
-                                    href="#home">Inicio</a>
+                                <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200" href="#home"
+                                    aria-current="page">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2 dark:text-neutral-200 dark:lg:text-neutral-200"
@@ -89,7 +104,8 @@
         </nav>
     </header>
 
-    <main class="dark:bg-gray-950 flex justify-center items-center h-screen px-6 pt-20">
+    <main role="main" aria-label="Seção principal de apresentação do portfólio"
+        class="dark:bg-gray-950 flex justify-center items-center h-screen px-6 pt-20">
         <div class="text-center flex flex-col items-center gap-y-6 md:gap-y-10">
             <h1 class="text-neutral-800 dark:text-neutral-200 2xl:text-6xl text-5xl font-black">Olá, sou Américo
                 Rodrigues</h1>
@@ -145,8 +161,7 @@
                 </li>
 
                 <li class="icon-content">
-                    <a href="mailto:americo.200422@gmail.com" aria-label="Youtube" data-social="youtube"
-                        target="_blank">
+                    <a href="mailto:americo.200422@gmail.com" aria-label="E-mail" data-social="youtube" target="_blank">
                         <div class="filled"></div>
                         <i class="bi bi-envelope-at-fill text-2xl z-10"></i>
                     </a>
@@ -155,6 +170,7 @@
             </ul>
         </div>
     </main>
+
     <div
         class="flex justify-center items-center fixed md:bottom-20 md:right-10 bottom-14 right-8 gap-2 animate-pulse-1s z-10 cursor-pointer">
         <a href="https://wa.me/5511964166962?text=Olá, estava navegando pelo site e gostaria de tirar algumas duvidas."
@@ -172,9 +188,9 @@
     </div>
 
     <!-- Section about -->
-    <section id="about" class="px-6 dark:bg-gray-950">
+    <section id="about" class="px-6 dark:bg-gray-950" aria-labelledby="titulo-sobre">
         <div class="flex items-center flex-col gap-5 max-w-2xl mx-auto text-center">
-            <h2
+            <h2 id="titulo-sobre"
                 class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
                 <span>Sobre mim</span>
             </h2>
@@ -195,11 +211,12 @@
                 <p class="mb-8 text-neutral-700  dark:text-neutral-400 text-base leading-relaxed">Estou aberto a
                     oportunidades de <strong class="text-neutral-600 dark:text-neutral-300">trabalho</strong>
                     onde eu possa contribuir, aprender e crescer. Se tiverem uma boa oportunidade que corresponda às
-                    minhas competências e experiência, <strong
-                        class="text-neutral-600 dark:text-neutral-300">entre em contato.</strong></p>
+                    minhas competências e experiência, <strong class="text-neutral-600 dark:text-neutral-300">entre em
+                        contato.</strong></p>
                 <a href="#contact">
                     <button
-                        class="w-52 h-14 bg-button-bg cursor-pointer rounded-md border-2 border-none dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_1.5px_-3.5px_0px_1px_#441bbf,inset_-1.5px_0.5px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out">
+                        class="w-52 h-14 bg-button-bg cursor-pointer rounded-md border-2 border-none dark:border-none dark:shadow-[inset_0px_-2px_0px_1px_#441bbf,inset_0px_0.5px_0px_1px_#441bbf] hover:border-[#441bbf] hover:bg-transparent shadow-[inset_1.5px_-3.5px_0px_1px_#441bbf,inset_-1.5px_0.5px_0px_1px_#441bbf] hover:text-neutral-700 group transition duration-300 ease-in-out"
+                        aria-label="Ir para a seção de contato">
                         <span
                             class="font-medium text-base uppercase text-neutral-100 group-hover:text-text-custom">Entrar
                             em contato</span>
@@ -207,7 +224,7 @@
                 </a>
             </div>
             <div class="image-about w-4/5 md:w-4/6">
-                <img src="./assets/imagens/img-sobre.jpg" alt="Imagem da seção sobre"
+                <img src="./assets/imagens/img-sobre.jpg" alt="Foto representando o desenvolvedor"
                     class="block w-full h-auto relative px-3">
             </div>
         </div>
@@ -215,97 +232,96 @@
     <!-- fim section about -->
 
     <!-- section skills -->
-    <section class="py-20 px-6 dark:bg-gray-950">
+    <section class="py-20 px-6 dark:bg-gray-950" aria-labelledby="habilidades-titulo">
         <div class="flex justify-center">
-            <h2
+            <h2 id="habilidades-titulo"
                 class="text-neutral-800 dark:text-neutral-300 uppercase text-4xl font-bold tracking-wider border-bottom-custom">
                 habilidades
             </h2>
         </div>
-        <div class="flex justify-center items-center ">
-            <div class="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto mt-16 ">
-                <div
+        <div class="flex justify-center items-center">
+            <ul class="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto mt-16" role="list">
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>HTML 5</p>
-                    <i class="devicon-html5-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-html5-plain text-4xl" title="HTML5"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>CSS</p>
-                    <i class="devicon-css3-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-css3-plain text-4xl" title="CSS"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>JavaScript</p>
-                    <i class="devicon-javascript-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-javascript-plain text-4xl" title="JAVASCRIPT"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>React</p>
-                    <i class="devicon-react-original text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-react-original text-4xl" title="REACT"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>React Native</p>
-                    <i class="devicon-react-original text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-react-original text-4xl" title="REACT-NATIVE"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Typescript</p>
-                    <i class="devicon-typescript-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-typescript-plain text-4xl" title="TYPESCRIPT"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Node JS</p>
-                    <i class="devicon-nodejs-plain-wordmark text-5xl"></i>
-                </div>
-                <div
+                    <i class="devicon-nodejs-plain-wordmark text-5xl" title="NODEJS"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
-                    <p>Mysql</p>
-                    <i class="devicon-mysql-original text-4xl"></i>
-                </div>
-                <div
+                    <p>MySQL</p>
+                    <i class="devicon-mysql-original text-4xl" title="MYSQL"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Firebase</p>
-                    <i class="devicon-firebase-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-firebase-plain text-4xl" title="FIREBASE"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Tailwind</p>
-                    <i class="devicon-tailwindcss-original text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-tailwindcss-original text-4xl" title="TAILWIND"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Bootstrap</p>
-                    <i class="devicon-bootstrap-plain text-4xl"></i>
-
-                </div>
-                <div
+                    <i class="devicon-bootstrap-plain text-4xl" title="BOOTSTRAP"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Sass</p>
-                    <i class="devicon-sass-original text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-sass-original text-4xl" title="SASS"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Vite</p>
-                    <i class="devicon-vitejs-plain text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-vitejs-plain text-4xl" title="VITE"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
-                    <p>GIT</p>
-                    <i class="devicon-git-plain text-4xl"></i>
-                </div>
-                <div
+                    <p>Git</p>
+                    <i class="devicon-git-plain text-4xl" title="GIT"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>GitHub</p>
-                    <i class="devicon-github-original text-4xl"></i>
-                </div>
-                <div
+                    <i class="devicon-github-original text-4xl" title="GITHUB"></i>
+                </li>
+                <li
                     class="bg-gray-200 dark:bg-gray-900 dark:shadow-none w-28 h-32 flex flex-col justify-center items-center gap-2 border-b-4 border-border-custom rounded-tl-3xl duration-300 hover:-translate-y-6 shadow-2xl shadow-neutral-400 text-text-custom">
                     <p>Figma</p>
-                    <i class="devicon-figma-plain text-4xl"></i>
-                </div>
-            </div>
+                    <i class="devicon-figma-plain text-4xl" title="FIGMA"></i>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- fim section skills -->
@@ -322,16 +338,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto pt-16 cursor-default">
             <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
                 <div class="flex justify-between items-center pb-4">
-                    <h2
+                    <h3
                         class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
-                        01</h2>
+                        01</h3>
                     <i
                         class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
                 </div>
                 <div class="flex flex-col">
-                    <h2
+                    <h3
                         class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
-                        Landing Pages</h2>
+                        Landing Pages</h3>
                     <p class="pb-4 text-neutral-700 dark:text-neutral-300">Páginas focadas em conversão, criadas para
                         capturar leads, aumentar
                         vendas
@@ -342,17 +358,17 @@
             </div>
             <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
                 <div class="flex justify-between items-center pb-4">
-                    <h2
+                    <h3
                         class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
-                        02</h2>
+                        02</h3>
                     <i
                         class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
                 </div>
                 <div class="flex flex-col">
-                    <h2
+                    <h3
                         class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
-                        Site intitucional
-                    </h2>
+                        Site institucional
+                    </h3>
                     <p class="pb-4 text-neutral-700 dark:text-neutral-300">O site institucional é o cartão de visita
                         digital da sua empresa.
                         Ele
@@ -363,18 +379,37 @@
             </div>
             <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
                 <div class="flex justify-between items-center pb-4">
-                    <h2
+                    <h3
                         class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
-                        03</h2>
+                        03</h3>
                     <i
                         class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
                 </div>
                 <div class="flex flex-col">
-                    <h2
+                    <h3
+                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
+                        Aplicativos
+                        Móveis
+                    </h3>
+                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">Design sob medida que reflete a identidade da
+                        Transforme sua ideia em um app poderoso e funcional. Aplicativos rápidos, intuitivos e com
+                        design impecável para destacar sua marca no mundo mobile.</p>
+                </div>
+            </div>
+            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
+                <div class="flex justify-between items-center pb-4">
+                    <h3
+                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
+                        04</h3>
+                    <i
+                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
+                </div>
+                <div class="flex flex-col">
+                    <h3
                         class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
                         Otimização com
                         Google
-                    </h2>
+                    </h3>
                     <p class="pb-4 text-neutral-700 dark:text-neutral-300">Seu site será entregue totalmente otimizado,
                         seguindo as melhores
                         práticas
@@ -382,27 +417,6 @@
                         Google. Você alcançará posições de destaque nas pesquisas do Google e atrairá
                         um volume maior de visitantes. Aproveite o potencial máximo do seu site e veja
                         sua visibilidade crescer.</p>
-                </div>
-            </div>
-            <div class="shadow-2xl group py-5 px-4 rounded-md dark:bg-gray-900">
-                <div class="flex justify-between items-center pb-4">
-                    <h2
-                        class="services text-5xl font-bold text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300">
-                        04</h2>
-                    <i
-                        class="bi bi-arrow-down-right-circle-fill text-5xl text-neutral-800 dark:text-neutral-300 group-hover:text-text-custom duration-300"></i>
-                </div>
-                <div class="flex flex-col">
-                    <h2
-                        class="text-4xl font-semibold pb-4 group-hover:text-text-custom duration-300 text-neutral-800 dark:text-neutral-300">
-                        Layouts
-                        Personalizados
-                    </h2>
-                    <p class="pb-4 text-neutral-700 dark:text-neutral-300">Design sob medida que reflete a identidade da
-                        sua marca, criando um
-                        visual
-                        único e encantador que
-                        destaca o poder do seu negócio.</p>
                 </div>
             </div>
         </div>
