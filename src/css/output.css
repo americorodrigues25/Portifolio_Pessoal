@@ -1019,10 +1019,6 @@ video {
   clear: none;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .m-5 {
   margin: 1.25rem;
 }
@@ -1074,10 +1070,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
 }
 
 .box-border {
@@ -1235,10 +1227,6 @@ video {
   min-height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -1317,10 +1305,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -2433,11 +2417,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#441bbf\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 27 191 / var(--tw-bg-opacity));
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2548,24 +2527,16 @@ video {
      object-fit: scale-down;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-1 {
@@ -2851,6 +2822,11 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
+.text-\[\#441bbf\] {
+  --tw-text-opacity: 1;
+  color: rgb(68 27 191 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2904,11 +2880,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#441bbf\] {
-  --tw-text-opacity: 1;
-  color: rgb(68 27 191 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3479,6 +3450,11 @@ video {
   font-weight: 700;
 }
 
+.hover\:text-\[\#441bbf\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(68 27 191 / var(--tw-text-opacity));
+}
+
 .hover\:text-neutral-700:hover {
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
@@ -3487,11 +3463,6 @@ video {
 .hover\:text-text-custom:hover {
   --tw-text-opacity: 1;
   color: rgb(73 27 191 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#441bbf\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(68 27 191 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
